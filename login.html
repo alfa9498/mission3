@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - videobelajar</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div  class="logo">
+          <h1>video<span class="logo-2">belajar</span></h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="login">
+        <h2>Masuk ke Akun</h2>
+        <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+
+        <form action="index.html" method="get">
+          <label for="email">E-Mail<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password"
+            >Kata Sandi<span class="required">*</span></label
+          >
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <span class="password-icon mdi mdi-eye-off"></span>
+          </div>
+          <a href="#" class="forgot-password">Lupa Password?</a>
+
+          <button type="submit" class="login-button">Masuk</button>
+          <a href="register.html" class="register-button">Daftar</a>
+
+          <div class="google-login">
+            <div class="line">atau</div>
+            <br />
+            <button type="button" class="google-button">
+              <img
+                src="icons/google-icon.svg"
+                alt="Google Login"
+                class="google-icon"
+              />
+              Login dengan Google
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 videobelajar. Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>

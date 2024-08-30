@@ -1,0 +1,360 @@
+/* Reset beberapa styling default browser */
+body,
+h1,
+h2,
+p,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling umum untuk body */
+body {
+  background-color: #fff4e6; /* Warna latar belakang cream untuk halaman */
+  color: #333; /* Warna teks umum */
+}
+
+/* Styling header untuk semua halaman */
+header {
+  background-color: #ffffff; /* Warna latar belakang putih untuk header */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+}
+
+header .logo {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff8c00; /* Warna default untuk teks "video" */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Untuk memastikan pseudo-elemen `::after` berada di bawah teks */
+}
+
+.logo h1 span.logo-2 {
+  background: linear-gradient(
+    to bottom,
+    #ffbd3a 30%,
+    #ce2600 70%
+  ); /* Gradien dari oranye muda ke oranye tua */
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Membuat warna teks transparan agar gradien terlihat */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  position: relative; /* Untuk memastikan pseudo-elemen `::after` berada di bawah teks */
+}
+
+.logo h1 span.logo-2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Jarak setengah lingkaran dari teks, disesuaikan agar lebih dekat */
+  left: 0;
+  right: 0;
+  height: 10px; /* Tinggi setengah lingkaran, disesuaikan agar lebih kecil */
+  background: radial-gradient(
+    circle at bottom center,
+    #ce2600 5%,
+    transparent 10%
+  );
+  border-radius: 50% 50% 0 0; /* Membentuk setengah lingkaran */
+  z-index: -1; /* Menempatkan setengah lingkaran di belakang teks */
+}
+
+/* Styling untuk main content */
+main {
+  background-color: #fff4e6; /* Warna latar belakang cream untuk konten utama */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Styling untuk register section */
+.register {
+  background-color: #ffffff; /* Warna latar belakang putih untuk form register */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+}
+
+.register h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling untuk label */
+label {
+  display: flex;
+  align-items: center;
+  position: relative; /* Position relative untuk penempatan bintang */
+  font-size: 1em; /* Ukuran font untuk label */
+}
+
+/* Styling untuk label bintang merah */
+label .required {
+  color: red; /* Warna merah untuk bintang */
+  margin-left: 5px; /* Jarak antara label dan bintang */
+  font-size: 1.2em; /* Ukuran font bintang */
+}
+
+/* Styling untuk input */
+input {
+  width: 100%; /* Memastikan input mengisi lebar kontainer */
+  padding: 10px;
+  border: 2px solid #dcdcdc; /* Menghilangkan border */
+  border-radius: 5px; /* Membuat sudut lebih melengkung */
+  font-size: 1em;
+  box-sizing: border-box; /* Menghitung padding dan border dalam lebar total */
+}
+
+/* Styling untuk password container */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px; /* Ruang untuk ikon mata */
+}
+
+/* Styling untuk password icon */
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #333; /* Warna ikon mata */
+  cursor: pointer;
+}
+
+/* Styling untuk phone-container */
+.phone-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara dropdown dan input */
+}
+
+/* Gaya label dan elemen yang diperlukan */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+  font-size: 1.2em;
+}
+
+/* Kontainer untuk dropdown dan input */
+.phone-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Kontainer untuk dropdown dan bendera */
+.country-dropdown {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd; /* Border abu-abu di sekitar dropdown dan bendera */
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 150px; /* Lebar kotak luar sama dengan dropdown */
+}
+
+/* Kontainer untuk bendera dengan background abu-abu */
+.flag-container {
+  display: flex;
+  flex-direction: column;
+  width: 50px; /* Lebar bendera */
+  height: 30px; /* Tinggi bendera */
+  background-color: #ccc; /* Background abu-abu di sekitar bendera */
+}
+
+/* Bagian merah dari bendera */
+.flag-icon-red {
+  background-color: red;
+  height: 50%; /* Setengah tinggi kotak */
+  width: 100%;
+  border: none; /* Hapus border */
+}
+
+/* Bagian putih dari bendera */
+.flag-icon-white {
+  background-color: white;
+  height: 50%; /* Setengah tinggi kotak */
+  width: 100%;
+  border: none; /* Hapus border */
+}
+
+/* Dropdown style */
+.dropdown {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  flex: 1;
+  background-color: white; /* Background putih untuk dropdown */
+}
+
+/* Input telepon */
+.phone-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.phone-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.dropdown {
+  border: none; /* Menghilangkan border dropdown agar menyatu dengan kotak */
+  border-radius: 0; /* Menghilangkan radius border */
+  padding: 10px;
+  background-color: #ffffff;
+  font-size: 0.9em; /* Ukuran font dropdown lebih kecil */
+  width: 60px; /* Lebar dropdown */
+  text-align: center; /* Memusatkan teks dalam dropdown */
+}
+
+/* Styling untuk input telepon */
+.phone-input {
+  flex: 1; /* Mengisi sisa ruang yang tersedia */
+  padding: 10px;
+  border: 2px solid #dcdcdc;
+  border-radius: 0 5px 5px 0; /* Hanya sudut kanan atas dan bawah */
+}
+/* Styling untuk form actions */
+.forgot-password {
+  color: #626364; /* Warna biru untuk link lupa password */
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-bottom: 10px; /* Space below the link */
+  display: block;
+  text-align: right;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Styling untuk button register */
+.register-button {
+  background-color: #3ecf4c; /* Warna hijau untuk tombol */
+  color: rgb(255, 255, 255); /* Warna teks tombol */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling untuk button login */
+.login-button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #3ecf4c; /* Warna teks tombol */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #e2fcd9;
+  border-radius: 10px;
+  padding: 64px, 120px, 64px, 120px;
+}
+/* Styling untuk garis pembatas */
+.line {
+  display: flex;
+  align-items: center;
+  color: #8f8888;
+  font-weight: 400;
+  font-size: 18px; /* Ukuran font sesuai kebutuhan */
+  margin: 20px 0; /* Jarak vertikal atas dan bawah */
+}
+.line::before,
+.line::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #f1f1f1; /* Warna garis pembatas */
+  margin: 0 10px; /* Jarak antara garis dengan teks */
+}
+
+/* Styling untuk tombol login */
+
+.login-button:hover {
+  background-color: #3ecf4c; /* Latar belakang berubah hijau saat hover */
+  color: white; /* Teks berubah putih saat hover */
+}
+
+/* Styling untuk tombol login dengan Google */
+.google-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Lebar tombol mengisi seluruh kolom */
+  padding: 12px; /* Padding yang lebih proporsional */
+  font-size: 1em; /* Ukuran font yang sesuai */
+  font-weight: bold; /* Teks tebal */
+  color: #333; /* Warna teks hitam */
+  background-color: #ffffff; /* Latar belakang putih */
+  border: 2px solid #f1f1f1; /* Border abu-abu muda */
+  border-radius: 8px; /* Radius yang lebih lembut */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Efek transisi untuk interaksi */
+}
+
+.google-button img.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Styling untuk footer */
+footer {
+  text-align: center;
+  margin-top: 20px; /* Jarak lebih kecil untuk konsistensi dengan tombol lainnya */
+  font-size: 0.9em;
+  color: #666;
+  padding: 10px 0; /* Padding vertikal di footer */
+  background-color: #f9f9f9; /* Latar belakang footer yang lebih terang */
+  border-top: 2px solid #ddd; /* Border atas yang lebih tebal dan jelas */
+}

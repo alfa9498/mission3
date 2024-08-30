@@ -1,0 +1,487 @@
+/* Reset beberapa styling default browser */
+body,
+h1,
+h2,
+p,
+form,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling umum untuk body */
+body {
+  background-color: #fff4e6;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container khusus untuk header */
+header.header-container {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%; /* Mengatur lebar header agar memenuhi seluruh layar */
+}
+
+/* Styling header */
+header {
+  width: 100%; /* Header lebar penuh */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  padding: 12px 120px; /* Padding untuk memberikan ruang di dalam header */
+  display: flex;
+  justify-content: space-between; /* Menyebar elemen header ke kiri dan kanan */
+  align-items: center; /* Vertikal align center untuk elemen header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan sedikit bayangan untuk efek kedalaman */
+  border-bottom: 1px solid #ffffff; /* Border bawah untuk pemisah */
+  box-sizing: border-box;
+  margin-bottom: 50px; /* Jarak bawah header */
+}
+
+/* Styling untuk logo */
+header .logo h1 {
+  font-size: 2.5em; /* Ukuran font besar untuk logo */
+  font-weight: bold;
+  color: #ff8c00; /* Warna oranye untuk teks "video" */
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling untuk bagian dari logo */
+header .logo h1 span.logo-2 {
+  background: linear-gradient(
+    to bottom,
+    #ffbd3a 30%,
+    #ce2600 70%
+  ); /* Gradien warna pada teks "belajar" */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Styling untuk navigasi */
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling untuk link kategori */
+header .category {
+  margin-right: 20px; /* Memberikan jarak antara kategori dan ikon user */
+  text-decoration: none;
+  color: #5f5e5e; /* Warna teks kategori */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22.4px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+/* Styling untuk ikon pengguna */
+header .user-icon {
+  width: 44px; /* Ukuran lebar dan tinggi ikon */
+  height: 44px;
+  border-radius: 10px; /* Membuat sudut ikon menjadi melengkung */
+  opacity: 1; /* Menampilkan ikon */
+}
+
+/* Styling untuk background container */
+.background-container {
+  background-image: url("/icons/image0.jpg"); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh elemen */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  color: white; /* Warna teks */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  border-radius: 10px; /* Membuat sudut elemen menjadi melengkung */
+
+  /* Menambahkan flexbox untuk memusatkan konten secara horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh; /* Mengatur tinggi elemen sesuai viewport */
+  width: calc(
+    100% - 240px
+  ); /* Lebar elemen dengan jarak padding yang sama dengan header */
+  max-width: 1140px; /* Lebar maksimum elemen */
+  margin: 0 auto; /* Otomatis memusatkan elemen secara horizontal */
+  padding: 100px 140px 64px 80px; /* Padding dalam elemen */
+  gap: 10px; /* Memberikan jarak antar elemen dalam container */
+  margin: 10px 0 0 120px;
+  margin-bottom: 50px; /* Jarak bawah header */
+}
+
+/* Styling untuk h1 */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk h2 */
+h2 {
+  font-size: 1.5em; /* Ukuran font untuk h2 */
+  margin-bottom: 20px; /* Jarak bawah dari elemen h2 */
+}
+
+/* Styling untuk deskripsi */
+.description {
+  font-size: 1.2em; /* Ukuran font untuk deskripsi */
+  margin-bottom: 10px; /* Jarak bawah dari elemen p */
+  color: white;
+}
+.container .description {
+  color: white;
+}
+
+/* Styling untuk tombol */
+button {
+  background-color: #3ecf4c; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  font-size: 16px;
+  font: 700;
+  border: none; /* Menghapus border tombol */
+  padding: 10px 20px 10px 20px; /* Jarak di dalam tombol */
+  border-radius: 10px;
+}
+
+.featured-products {
+  text-align: left;
+  margin: 0 0 0 120px; /* Jarak dari tepi kiri */
+  max-width: 800px;
+  padding: 20px 0;
+}
+/* Styling untuk tombol saat hover */
+.button-container {
+  display: flex;
+  gap: 20px; /* Jarak antara tombol */
+  margin-top: 20px; /* Jarak atas antara tombol dan elemen sebelumnya */
+  position: relative; /* Posisi relatif untuk elemen tambahan */
+  text-align: left;
+  margin: 0 0 0 120px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Jarak antara tombol */
+  margin-top: 20px; /* Jarak atas antara tombol dan elemen sebelumnya */
+  position: relative; /* Posisi relatif untuk elemen tambahan */
+}
+
+.button-container button {
+  background: none;
+  border: none;
+  color: #333; /* Warna teks tombol default */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0; /* Jarak atas-bawah dalam tombol */
+  position: relative; /* Posisi relatif untuk penempatan garis bawah */
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.button-container button::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* Jarak bawah dari teks tombol */
+  left: 0; /* Menempatkan garis bawah di sebelah kiri */
+  width: 0; /* Ukuran awal garis bawah */
+  height: 6px;
+  background-color: #f64920; /* Warna garis bawah */
+  border-radius: 10px 0 0 0; /* Sudut melengkung pada bagian atas kiri */
+  opacity: 0; /* Garis bawah tidak terlihat secara default */
+  transition: width 0.3s ease, opacity 0.3s ease, color 0.3s ease; /* Transisi untuk lebar, opasitas, dan warna */
+}
+
+.button-container button.active {
+  color: #f64920; /* Warna teks tombol aktif */
+}
+
+.button-container button.active::after {
+  width: 52px; /* Lebar garis bawah ketika aktif */
+  opacity: 1; /* Garis bawah terlihat saat tombol aktif */
+  border-radius: 10px 0 0 0; /* Sudut melengkung pada bagian atas kiri */
+}
+
+.button-container button:hover::after {
+  width: 52px; /* Lebar garis bawah saat hover (opsional) */
+  opacity: 1; /* Garis bawah terlihat saat hover (opsional) */
+}
+/* akhir featured products */
+
+/* Styling untuk kotak gambar */
+.image-box {
+  width: 1200px; /* Lebar kotak */
+  height: 1200px; /* Tinggi kotak */
+  background-image: url("/icons/image1.jpg"); /* Ganti dengan path gambar Anda */
+  background-size: 150px; /* Menyesuaikan gambar agar menutupi kotak */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 2px solid #7d1111; /* Border kotak */
+  border-radius: 50px 70px 10px 10px; /* Membuat sudut kotak menjadi melengkung */
+}
+
+/* frame card start disini yaa */
+/* Container untuk card-frame */
+.card-wrapper {
+  display: flex;
+  flex-direction: row; /* Mengatur agar card berjajar secara horizontal */
+  gap: 16px; /* Jarak antar card-container */
+  overflow-x: auto; /* Menambahkan scroll horizontal jika card terlalu banyak */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 0.3dvb 0 120px;
+}
+
+.card-container {
+  flex-shrink: 0; /* Mencegah card dari mengecil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 384px;
+  height: 426px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  display: grid;
+  flex-direction: column;
+  gap: 1 px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Gaya untuk gambar di dalam card */
+.card img {
+  width: calc(
+    100% - 20px
+  ); /* Mengurangi lebar gambar agar ada jarak dengan tepi card */
+  height: 193px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin: 10px 10px 10px; /* Menambahkan jarak 20px dari tepi kiri, kanan, dan atas, tanpa jarak bawah */
+}
+
+/* Gaya untuk konten di bawah gambar */
+.content {
+  width: calc(
+    100% - 40px
+  ); /* Mengurangi lebar konten agar sesuai dengan gambar */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 20px; /* Menambahkan jarak horizontal 20px dari tepi card */
+}
+
+/* Gaya untuk judul dan deskripsi */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Gaya untuk informasi profil */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 20px; /* Menambahkan jarak horizontal 20px dari tepi card */
+}
+
+/* Gaya untuk ikon profil */
+.profile-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10% 10%;
+}
+
+/* Gaya untuk rating dan harga */
+.rating-price-container {
+  display: flex;
+  justify-content: space-between; /* Mengatur bintang di kiri dan harga di kanan */
+  align-items: center;
+  margin: 0 25px; /* Menambahkan jarak horizontal 20px dari tepi card */
+}
+
+/* Gaya untuk rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: px;
+  font-weight: 500;
+  color: #ee2323;
+}
+
+/* Gaya untuk bintang rating */
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.filled {
+  color: #ffd700;
+}
+
+.half-filled::before {
+  content: "\2605";
+  color: #ffd700;
+  position: absolute;
+}
+
+/* Bintang setengah terisi */
+.half-filled {
+  background: linear-gradient(
+    to right,
+    #ffd700 50%,
+    #ccc 50%
+  ); /* Setengah berwarna kuning (#ffd700), setengah abu-abu */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.empty {
+  color: #ccc;
+}
+
+/* Gaya untuk teks rating */
+.text {
+  color: #333;
+}
+
+/* Gaya untuk harga */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3ecf4c;
+}
+/* style untuk button subscribe */
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 525px; /* Lebar untuk input dan tombol */
+  height: 40px; /* Tinggi untuk input dan tombol */
+  padding: 8px 8px 8px 32px; /* Padding untuk keseluruhan container */
+  gap: 20px; /* Jarak antara input dan tombol */
+  border-radius: 10px 10px 10px 10px; /* Sudut melengkung di bagian atas kiri */
+  background-color: white; /* Background putih */
+  opacity: 1; /* Pastikan elemen terlihat */
+  border: 2px solid #ccc; /* Border di sekitar input dan tombol */
+}
+
+.email-input {
+  flex-grow: 1; /* Input mengambil ruang yang tersedia */
+  border: none; /* Menghapus border internal */
+  color: black; /* Warna teks hitam */
+  background-color: transparent; /* Background mengikuti container */
+  padding: 0; /* Menghapus padding tambahan */
+}
+
+.email-input::placeholder {
+  color: #333333; /* Placeholder abu-abu */
+}
+
+.subscribe-button {
+  width: 132px; /* Lebar sesuai spesifikasi */
+  height: 42px; /* Tinggi sesuai spesifikasi */
+
+  background-color: #ffbd3a; /* Warna krem untuk tombol */
+  color: #ffffff; /* Warna teks tombol hitam */
+  font-weight: 700;
+  border: none; /* Menghapus border bawaan tombol */
+  border-radius: 10px 10px 10px 10px; /* Sudut melengkung di bagian kanan bawah tombol */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1; /* Pastikan tombol terlihat */
+}
+
+.footer {
+  width: 100%; /* Mengatur lebar footer agar mencakup seluruh layar */
+  height: auto;
+  padding: 60px 0; /* Padding atas dan bawah, tanpa padding kanan dan kiri */
+  gap: 20px;
+  opacity: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar */
+}
+
+.footer .content {
+  padding: 0 60px; /* Mengatur padding kanan dan kiri untuk konten di dalam footer */
+  width: 100%;
+}
+
+.logo,
+nav,
+.social-icons {
+  width: 33.33%; /* Membagi konten menjadi tiga bagian yang sama lebar */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.icon-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Menempatkan ikon di sebelah kanan */
+}
+
+.icon-group a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Jarak antar kolom */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item ul li {
+  margin-bottom: 5px;
+  font-size: 1em;
+}

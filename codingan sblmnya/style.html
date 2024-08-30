@@ -1,0 +1,182 @@
+/* Reset Margin dan Padding */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Umum Styling */
+body {
+  font-family: "Poppins", sans-serif; /* Font Poppins */
+  background-color: #f5f5dc; /* Warna latar belakang krim */
+  color: #333; /* Warna teks */
+  line-height: 1.6; /* Jarak baris */
+}
+
+/* Header Styling */
+header {
+  background-color: #fff; /* Warna latar belakang putih */
+  color: #333; /* Warna teks */
+  padding: 15px 20px; /* Padding di sekitar header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+  border-bottom: 2px solid #f5f5dc; /* Garis bawah krim */
+}
+
+header .container {
+  max-width: 1200px; /* Lebar maksimum konten */
+  margin: 0 auto; /* Mengatur margin otomatis */
+  display: flex; /* Flexbox untuk tata letak */
+  justify-content: space-between; /* Menempatkan logo dan menu navigasi */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+header .logo h1 {
+  font-size: 24px; /* Ukuran font untuk logo */
+}
+
+header nav ul {
+  list-style: none; /* Menghapus bullet points */
+  display: flex; /* Flexbox untuk daftar */
+}
+
+header nav ul li {
+  margin: 0 15px; /* Margin di kiri dan kanan item daftar */
+}
+
+header nav ul li a {
+  color: #333; /* Warna teks tautan */
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  font-size: 16px; /* Ukuran font untuk tautan */
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Main Content Styling */
+main {
+  padding: 50px 20px; /* Padding di sekitar konten utama */
+}
+
+/* Hero Section Styling */
+.hero {
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.hero h2 {
+  font-size: 36px; /* Ukuran font untuk judul hero */
+  margin-bottom: 20px; /* Jarak bawah dari judul hero */
+}
+
+.hero p {
+  font-size: 18px; /* Ukuran font untuk paragraf hero */
+  margin-bottom: 20px; /* Jarak bawah dari paragraf hero */
+}
+
+.cta-button {
+  background-color: #333; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding di dalam tombol */
+  border-radius: 4px; /* Sudut melengkung untuk tombol */
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  display: inline-block; /* Menampilkan tombol sebagai blok inline */
+  margin: 0 10px; /* Margin di kiri dan kanan tombol */
+}
+
+.cta-button:hover {
+  background-color: #555; /* Warna latar belakang saat hover */
+}
+
+/* Form Styling */
+.login-wrapper,
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Mengatur tinggi minimum */
+}
+
+.login-container,
+.register-container {
+  background-color: #fff; /* Warna latar belakang putih */
+  padding: 20px;
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+  width: 100%;
+  max-width: 400px; /* Lebar maksimum */
+}
+
+h1 {
+  margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Jarak bawah dari grup formulir */
+}
+
+label {
+  display: block; /* Menampilkan label sebagai blok */
+  margin-bottom: 5px; /* Jarak bawah dari label */
+}
+
+input {
+  width: 100%; /* Lebar input */
+  padding: 10px; /* Padding di dalam input */
+  border: 1px solid #ddd; /* Warna border input */
+  border-radius: 4px; /* Sudut melengkung */
+}
+
+button {
+  background-color: #333; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding di dalam tombol */
+  border: none; /* Menghapus border tombol */
+  border-radius: 4px; /* Sudut melengkung untuk tombol */
+  cursor: pointer; /* Menampilkan kursor pointer saat hover */
+}
+
+button:hover {
+  background-color: #555; /* Warna latar belakang saat hover */
+}
+
+.form-footer {
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.form-footer a {
+  color: #333; /* Warna tautan di footer formulir */
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+}
+
+.form-footer a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Menu Section Styling */
+.menu {
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.menu ul {
+  list-style: none; /* Menghapus bullet points */
+  padding: 0; /* Menghapus padding */
+}
+
+.menu ul li {
+  margin: 10px 0; /* Jarak vertikal antar item menu */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #fff; /* Warna latar belakang putih */
+  color: #333; /* Warna teks */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  padding: 10px 0; /* Padding di sekitar footer */
+  border-top: 2px solid #f5f5dc; /* Garis atas krim */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

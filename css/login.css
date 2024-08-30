@@ -1,0 +1,286 @@
+/* Reset beberapa styling default browser */
+body,
+h1,
+h2,
+p,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling umum untuk body */
+body {
+  background-color: #fff4e6; /* Warna latar belakang cream untuk halaman */
+  color: #333; /* Warna teks umum */
+}
+
+/* Styling header untuk semua halaman */
+header {
+  background-color: #ffffff; /* Warna latar belakang putih untuk header */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+}
+
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff8c00; /* Warna default untuk teks "video" */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Untuk memastikan pseudo-elemen `::after` berada di bawah teks */
+}
+
+.logo h1 span.logo-2 {
+  background: linear-gradient(
+    to bottom,
+    #ffbd3a 30%,
+    #ce2600 70%
+  ); /* Gradien dari oranye muda ke oranye tua */
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Membuat warna teks transparan agar gradien terlihat */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  position: relative; /* Untuk memastikan pseudo-elemen `::after` berada di bawah teks */
+}
+
+.logo h1 span.logo-2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Jarak setengah lingkaran dari teks, disesuaikan agar lebih dekat */
+  left: 0;
+  right: 0;
+  height: 10px; /* Tinggi setengah lingkaran, disesuaikan agar lebih kecil */
+  background: radial-gradient(
+    circle at bottom center,
+    #ce2600 5%,
+    transparent 10%
+  );
+  border-radius: 50% 50% 0 0; /* Membentuk setengah lingkaran */
+  z-index: -1; /* Menempatkan setengah lingkaran di belakang teks */
+}
+
+/* Styling untuk menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #007bff; /* Warna tautan */
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Styling untuk main content */
+main {
+  background-color: #fff4e6; /* Warna latar belakang cream untuk konten utama */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+/* Styling untuk login section */
+.login {
+  background-color: #ffffff; /* Warna latar belakang putih untuk form login */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk memberikan efek kedalaman */
+}
+
+.login h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling untuk label */
+label {
+  display: flex;
+  align-items: center;
+  position: relative; /* Position relative untuk penempatan bintang */
+  font-size: 1em; /* Ukuran font untuk label */
+}
+
+/* Styling untuk label bintang merah */
+label .required {
+  color: red; /* Warna merah untuk bintang */
+  margin-left: 5px; /* Jarak antara label dan bintang */
+  font-size: 1.2em; /* Ukuran font bintang */
+}
+
+/* Styling untuk input */
+input {
+  width: 100%; /* Memastikan input mengisi lebar kontainer */
+  padding: 10px;
+  border: 2px solid #dcdcdc; /* Menghilangkan border */
+  border-radius: px; /* Membuat sudut lebih melengkung */
+  font-size: 1em;
+  box-sizing: border-box; /* Menghitung padding dan border dalam lebar total */
+}
+
+/* Styling untuk password container */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px; /* Ruang untuk ikon mata */
+}
+
+/* Styling untuk password icon */
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #333; /* Warna ikon mata */
+  cursor: pointer;
+}
+
+/* Styling untuk form actions */
+.forgot-password {
+  color: #626364; /* Warna biru untuk link lupa password */
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-bottom: 10px; /* Space below the link */
+  display: block;
+  text-align: right;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Styling untuk buttons */
+button {
+  padding: 10px;
+  border-radius: 10px; /* Membuat sudut lebih melengkung */
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%; /* Ensure buttons are full width */
+  border: 0px solid transparent; /* Border transparan untuk tombol */
+  background-color: transparent; /* Warna tombol transparan */
+  font-weight: bolder;
+}
+
+/* Styling untuk tombol login */
+.login-button {
+  background-color: #3ecf4c; /* Warna latar belakang hijau untuk tombol Masuk */
+  color: #fff; /* Warna teks putih untuk tombol Masuk */
+  border-color: #159834; /* Warna border hijau */
+  margin-top: 10px, 26px, 10px, 26px;
+}
+
+.login-button:hover {
+  background-color: #047b1d; /*Warna hijau lebih gelap saat hover */
+  color: #fff;
+  border: 2px solid #dcdcdc;
+}
+
+/* Styling untuk tombol daftar */
+.register-button {
+  color: #3ecf4c; /* Warna teks hijau */
+  background-color: #e2fcd9; /* Warna latar belakang hijau muda */
+  border: 2px solid transparent; /* Border transparan */
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border-radius: 10px; /* Membuat sudut lebih melengkung */
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.register-button:hover {
+  background-color: #28a745; /* Warna hijau saat hover */
+  color: #fff;
+  border: 2px solid #28a745; /* Border hijau saat hover */
+}
+
+/* Styling untuk Google login */
+.line {
+  display: flex;
+  align-items: center;
+  color: #8f8888;
+}
+.line::before,
+.line::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #f1f1f1; /* Ganti dengan warna garis yang diinginkan */
+  margin: 0 10px; /* Jarak antara garis dengan teks */
+}
+.line {
+  font-weight: 400;
+  font-size: 18px; /* Ganti ukuran font sesuai kebutuhan */
+}
+
+/* Styling untuk Google login */
+.google-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent; /* Menghapus latar belakang */
+  color: #333; /* Warna teks hitam */
+  border: 0px solid #ccc; /* Warna border abu-abu */
+  border-radius: 10px; /* Membuat sudut lebih melengkung */
+  cursor: pointer;
+  font-size: 1em;
+  border: 2px solid #f1f1f1;
+}
+
+.google-button img.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Styling untuk footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - videobelajar</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <h1>video<span class="logo-2">belajar</span></h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="register">
+        <h2>Buat Akun Baru</h2>
+        <p>Mulai perjalanan belajar Anda di videobelajar.</p>
+
+        <form action="index.html" method="post">
+          <label for="full-name"
+            >Nama Lengkap<span class="required">*</span></label
+          >
+          <input type="text" id="full-name" name="full-name" required />
+
+          <label for="email">E-Mail<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">No.Hp<span class="required">*</span></label>
+          <div class="phone-container">
+            <div class="country-dropdown">
+              <div class="flag-container">
+                <div class="flag-icon-red"></div>
+                <div class="flag-icon-white"></div>
+              </div>
+              <select id="country-code" name="country-code" class="dropdown">
+                <option value="62" selected>+62</option>
+                <!-- Tambahkan lebih banyak opsi jika diperlukan -->
+              </select>
+            </div>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="phone-input"
+              required
+            />
+          </div>
+
+          <label for="password"
+            >Kata Sandi<span class="required">*</span></label
+          >
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <span class="password-icon mdi mdi-eye-off"></span>
+          </div>
+
+          <label for="confirm-password"
+            >Konfirmasi Kata Sandi<span class="required">*</span></label
+          >
+          <div class="password-container">
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+            <span class="password-icon mdi mdi-eye-off"></span>
+          </div>
+
+          <a href="#" class="forgot-password">Lupa Password?</a>
+
+          <button type="submit" class="register-button">Daftar</button>
+
+          <!-- Link ke halaman Login -->
+          <a href="login.html" class="login-button">Masuk</a>
+
+          <div class="google-login">
+            <div class="line">atau</div>
+            <br />
+            <button type="button" class="google-button">
+              <img
+                src="icons/google-icon.svg"
+                alt="Google Login"
+                class="google-icon"
+              />
+              Daftar dengan Google
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
